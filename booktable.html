@@ -1,274 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AnimeWorld</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <title>Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </head>
+<body>
 
-<body class="bg-dark text-light">
-
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="#">AnimeWorld</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="btn btn-outline-light m-1" href="#">Home</a></li>
-          <li class="nav-item"><a class="btn btn-outline-light m-1" href="#">Characters</a></li>
-          <li class="nav-item"><a class="btn btn-outline-light m-1" href="#">Episodes</a></li>
-          <li class="nav-item"><a class="btn btn-outline-light m-1" href="#">Gallery</a></li>
-        </ul>
+  <!-- First Container -->
+  <div class="container p-4">
+    <div class="row">
+      <div class="col-4">
+        <div class="bg-success text-white text-center p-4">column 1</div>
       </div>
-    </div>
-  </nav>
-
-  <!-- Slider -->
-  <div id="animeCarousel" class="carousel slide mt-5 pt-3" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="https://sm.ign.com/t/ign_in/screenshot/default/solo-leveling-season-2-cover_783f.1200.jpg"
-          class="d-block w-100" style="height: 450px; object-fit: cover;">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Solo Leveling</h5>
-          <p>The rise of Sung Jin-Woo as the Shadow Monarch.</p>
-        </div>
+      <div class="col-4">
+        <div class="bg-danger text-white text-center p-4">column 2</div>
       </div>
-      <div class="carousel-item">
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4WvnS-2WV13WefSrv-SfpmT2DwJc1eGDTQbzO5LiSVMvJXXBrK62ccNUV5I3qneFdEfQ&usqp=CAU"
-          class="d-block w-100" style="height: 450px; object-fit: cover;">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Attack on Titan</h5>
-          <p>Humanity’s last stand against Titans.</p>
-        </div>
+      <div class="col-4">
+        <div class="bg-warning text-white text-center p-4">column 3</div>
       </div>
-      <div class="carousel-item">
-        <img src="https://i.pinimg.com/1200x/c7/90/10/c790107a3f791ad89af454574f22d48f.jpg" class="d-block w-100"
-          style="height: 450px; object-fit: cover;">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Demon Slayer</h5>
-          <p>Tanjiro’s journey to save his sister and fight demons.</p>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#animeCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#animeCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
-  </div>
-
-  <!-- Anime Cards -->
-  <div class="container my-5">
-    <h2 class="text-center mb-4">Popular Anime</h2>
-    <div class="row row-cols-1 row-cols-md-4 g-4">
-
-      <!-- Card Template -->
-      <div class="col">
-        <div class="card h-100"><img src="https://i.pinimg.com/1200x/01/8d/e6/018de6f6ae17a610bf9061330f0ad549.jpg"
-            class="card-img-top" style="height:250px; object-fit:cover;">
-          <div class="card-body">
-            <h5 class="card-title">Attack on Titan</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100"><img src="https://i.pinimg.com/736x/ed/e2/07/ede207095a48f0b2ccc60fe9916fbb4e.jpg"
-            class="card-img-top" style="height:250px; object-fit:cover;">
-          <div class="card-body">
-            <h5 class="card-title">Demon Slayer</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100"><img src="https://i.pinimg.com/736x/5b/35/bd/5b35bd928b72d8d921dec48baffeb558.jpg"
-            class="card-img-top" style="height:250px; object-fit:cover;">
-          <div class="card-body">
-            <h5 class="card-title">Solo Leveling</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100"><img src="https://i.pinimg.com/736x/d1/d3/fd/d1d3fd5d143c9787f7153e934a4ae6e9.jpg"
-            class="card-img-top" style="height:250px; object-fit:cover;">
-          <div class="card-body">
-            <h5 class="card-title">Wind Breaker</h5>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card h-100"><img src="https://i.pinimg.com/736x/c3/e6/a2/c3e6a28d1cbcdfa5f27d13ef1913fdf8.jpg"
-            class="card-img-top" style="height:250px; object-fit:cover;">
-          <div class="card-body">
-            <h5 class="card-title">Suzume</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100"><img src="https://i.pinimg.com/736x/f4/8b/46/f48b4695d502bdc2b3fa12df51c6d521.jpg"
-            class="card-img-top" style="height:250px; object-fit:cover;">
-          <div class="card-body">
-            <h5 class="card-title">Tsukimichi: Moonlit Fantasy</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100"><img src="https://i.pinimg.com/1200x/a6/64/45/a66445a5c9c32b35a4a85f5a8ea42c74.jpg"
-            class="card-img-top" style="height:250px; object-fit:cover;">
-          <div class="card-body">
-            <h5 class="card-title">I Got a Cheat Skill</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100"><img src="https://i.pinimg.com/736x/b2/27/fe/b227fe3d2dedd58d0c57537071ea4e8b.jpg"
-            class="card-img-top" style="height:250px; object-fit:cover;">
-          <div class="card-body">
-            <h5 class="card-title">Mushoku Tensei</h5>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card h-100"><img src="https://i.pinimg.com/736x/31/16/1c/31161cda1c563b9db59fd6eb35b0c31d.jpg"
-            class="card-img-top" style="height:250px; object-fit:cover;">
-          <div class="card-body">
-            <h5 class="card-title">Shangri-La Frontier</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100"><img src="https://i.pinimg.com/736x/0b/42/20/0b4220ca4af1d4bd68745ed6a6f3b10c.jpg"
-            class="card-img-top" style="height:250px; object-fit:cover;">
-          <div class="card-body">
-            <h5 class="card-title">An Archdemon’s Dilemma</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100"><img src="https://i.pinimg.com/736x/b8/c1/ba/b8c1ba79067ade4578fa076103766f05.jpg"
-            class="card-img-top" style="height:250px; object-fit:cover;">
-          <div class="card-body">
-            <h5 class="card-title">Sword Art Online</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100"><img src="https://i.pinimg.com/736x/86/62/4b/86624b5cec4c124d661792faad4b4e1b.jpg"
-            class="card-img-top" style="height:250px; object-fit:cover;">
-          <div class="card-body">
-            <h5 class="card-title">Horimiya</h5>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card h-100"><img src="https://i.pinimg.com/736x/74/e0/52/74e05272d3f171c77f2ae18192644298.jpg"
-            class="card-img-top" style="height:250px; object-fit:cover;">
-          <div class="card-body">
-            <h5 class="card-title">Angel Next Door</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100"><img src="https://i.pinimg.com/736x/9a/d6/be/9ad6be5cca58f747d8ac6815525149d5.jpg"
-            class="card-img-top" style="height:250px; object-fit:cover;">
-          <div class="card-body">
-            <h5 class="card-title">Tokyo Revengers</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100"><img src="https://i.pinimg.com/1200x/b1/e0/c0/b1e0c02378df50e42ecdb8a71157706d.jpg"
-            class="card-img-top" style="height:250px; object-fit:cover;">
-          <div class="card-body">
-            <h5 class="card-title">Your Name</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100"><img src="https://i.pinimg.com/1200x/30/7b/45/307b455749a2d07d5dc0aeaff7e9b04f.jpg"
-            class="card-img-top" style="height:250px; object-fit:cover;">
-          <div class="card-body">
-            <h5 class="card-title">Tower of God</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100"><img src="https://i.pinimg.com/736x/d5/23/4e/d5234e4c5be869adcb3c88f234b3d0bc.jpg"
-            class="card-img-top" style="height:250px; object-fit:cover;">
-          <div class="card-body">
-            <h5 class="card-title">Darling in the FranXX</h5>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card h-100"><img src="https://i.pinimg.com/1200x/ee/c8/a9/eec8a9e0f738f459e8d360129703fc09.jpg"
-            class="card-img-top" style="height:250px; object-fit:cover;">
-          <div class="card-body">
-            <h5 class="card-title">one piece</h5>
-          </div>
-        </div>
-      </div>
-
-      
-      <div class="col">
-        <div class="card h-100"><img src="https://i.pinimg.com/736x/6b/d0/25/6bd025296153d55beed73c0b33218378.jpg"
-            class="card-img-top" style="height:250px; object-fit:cover;">
-          <div class="card-body">
-            <h5 class="card-title">Summer Ghost</h5>
-          </div>
-        </div>
-      </div>
-
     </div>
   </div>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-light pt-5 pb-3 mt-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 mb-3">
-          <h5 class="fw-bold">AnimeWorld</h5>
-          <p>Discover the best of anime — from classics to the latest hits. Stay updated and dive into your favorite
-            worlds.</p>
-        </div>
-        <div class="col-md-4 mb-3">
-          <h5 class="fw-bold">Quick Links</h5>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-light text-decoration-none">Home</a></li>
-            <li><a href="#" class="text-light text-decoration-none">Characters</a></li>
-            <li><a href="#" class="text-light text-decoration-none">Episodes</a></li>
-            <li><a href="#" class="text-light text-decoration-none">Gallery</a></li>
-            <li><a href="#" class="text-light text-decoration-none">Contact</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4 mb-3">
-          <h5 class="fw-bold">Follow Us</h5>
-          <a href="#" class="text-light me-3"><i class="bi bi-facebook fs-4"></i></a>
-          <a href="#" class="text-light me-3"><i class="bi bi-twitter fs-4"></i></a>
-          <a href="#" class="text-light me-3"><i class="bi bi-instagram fs-4"></i></a>
-          <a href="#" class="text-light"><i class="bi bi-youtube fs-4"></i></a>
+  <!-- Cards Section -->
+  <div class="container mt-2">
+    <div class="row">
+      <div class="col-12 col-md-4 mb-4">
+        <div class="card">
+          <img src="https://i.pinimg.com/736x/ed/e2/07/ede207095a48f0b2ccc60fe9916fbb4e.jpg" class="card-img-top" alt="Image">
+          <div class="card-title p-2">Title</div>
+          <div class="card-body">Kamado Tanjirou</div>
+          <div class="card-footer text-muted">Footer</div>
+          <a href="#" class="btn btn-primary m-2">Click</a>
         </div>
       </div>
-      <hr class="border-secondary">
-      <div class="text-center">
-        <small>© 2025 AnimeWorld. All Rights Reserved.</small>
+
+      <div class="col-12 col-md-4 mb-4">
+        <div class="card">
+          <img src="https://i.pinimg.com/736x/e0/34/3e/e0343e31006509a6eaec71656c364369.jpg" class="card-img-top" alt="Image">
+          <div class="card-title p-2">Title</div>
+          <div class="card-body">Mystical Warrior</div>
+          <div class="card-footer text-muted">Footer</div>
+          <a href="#" class="btn btn-primary m-2">Click</a>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 mb-4">
+        <div class="card">
+          <img src="https://i.pinimg.com/1200x/a4/58/25/a458251090b87624269998e17796be15.jpg" class="card-img-top" alt="Image">
+          <div class="card-title p-2">Title</div>
+          <div class="card-body">Mystical Warrior</div>
+          <div class="card-footer text-muted">Footer</div>
+          <a href="#" class="btn btn-primary m-2">Click</a>
+        </div>
       </div>
     </div>
-  </footer>
+  </div>
+ 
+  <div class="container">
+    <div class="row justify-content-center">
+       Centerer Column
+    </div>
+  </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
